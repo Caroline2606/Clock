@@ -1,0 +1,799 @@
+body {
+    background-image: url("Grafika/zegar.jpg");
+    background-size: cover;
+    font-family: 'Indie Flower', cursive;
+}
+
+ul, ul li {
+    margin: 50px;
+    padding: 0px;
+}
+
+#blok li {
+    list-style: none;
+}
+
+#blok, #blok ul {
+    width: 140px;
+}
+
+#blok ul {
+    position: absolute;
+    top: 0px;
+    left: 160px;
+    padding-left: 1px;
+    visibility: hidden;
+}
+
+#blok li {
+    padding-bottom: 1px;
+    position: relative;
+}
+
+#blok li:hover ul {
+    visibility: visible;
+    width: auto;
+    height: auto;
+}
+
+#blok a, #blok li:hover li a {
+    display: block;
+    font-size: 40px;
+    text-decoration: none;
+    padding: 10px;
+    width: 500px;
+    height: 100px;
+    color: black;
+    text-align: center;
+    background-color: lightgray;
+}
+
+#blok li:hover a, #blok li:hover li:hover a {
+    background-color: #CD5C5C;
+    color: black;
+}
+
+#imgT {
+    width: 800px;
+    height: 600px;
+    margin: 30px;
+}
+
+#rok {
+    font-size: 40px;
+    position: absolute;
+    top: 100px;
+    left: 220px;
+}
+
+#month {
+    font-size: 50px;
+    position: absolute;
+    top: 180px;
+    left: 150px;
+}
+
+#day {
+    font-size: 160px;
+    position: absolute;
+    top: 230px;
+    left: 180px;
+}
+
+#day2 {
+    font-size: 60px;
+    position: absolute;
+    bottom: 250px;
+    left: 160px;
+}
+
+#hour {
+    font-size: 50px;
+    position: absolute;
+    bottom: 170px;
+    left: 190px;
+}
+
+#ferie {
+    border-radius: 50%;
+    height: 250px;
+    width: 250px;
+    margin: 10px;
+    background-image: url("Grafika/winter.jpg");
+    background-size: cover;
+    position: absolute;
+    top: 30px;
+    left: 150px;
+    opacity: 1;
+    display: block;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+#ferie:hover #fer {
+    opacity: 1;
+}
+
+#ferie:hover #ferie {
+    opacity: 0.3;
+}
+
+#fer {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 150px;
+    left: 150px;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: #DCDCDC;
+    color: black;
+    font-size: 25px;
+    padding: 5px;
+}
+
+#wielkanoc {
+    border-radius: 50%;
+    height: 250px;
+    width: 250px;
+    margin: 10px;
+    background-image: url("Grafika/easter.jpg");
+    background-size: cover;
+    position: absolute;
+    top: 30px;
+    left: 500px;
+    opacity: 1;
+    display: block;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+#wielkanoc:hover #wiel {
+    opacity: 1;
+}
+
+#wielkanoc:hover #wielkanoc {
+    opacity: 0.3;
+}
+
+#wiel {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 150px;
+    left: 100px;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: #DCDCDC;
+    color: black;
+    font-size: 25px;
+    padding: 5px;
+}
+
+#wakacje {
+    border-radius: 50%;
+    height: 250px;
+    width: 250px;
+    margin: 10px;
+    background-image: url("Grafika/holidays.jpg");
+    background-size: cover;
+    position: absolute;
+    bottom: 90px;
+    left: 150px;
+}
+
+#wakacje:hover #wak {
+    opacity: 1;
+}
+
+#wakacje:hover #wakacje {
+    opacity: 0.3;
+}
+
+#wak {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 150px;
+    left: 100px;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: #DCDCDC;
+    color: black;
+    font-size: 25px;
+    padding: 5px;
+}
+
+#szkola {
+    border-radius: 50%;
+    height: 250px;
+    width: 250px;
+    margin: 10px;
+    background-image: url("Grafika/school.jpg");
+    background-size: cover;
+    position: absolute;
+    bottom: 90px;
+    left: 500px;
+}
+
+#szkola:hover #szk {
+    opacity: 1;
+}
+
+#szkola:hover #szkola {
+    opacity: 0.3;
+}
+
+#szk {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 150px;
+    left: 100px;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: #DCDCDC;
+    color: black;
+    font-size: 25px;
+    padding: 5px;
+}
+
+#sylwester {
+    border-radius: 50%;
+    height: 250px;
+    width: 250px;
+    margin: 10px;
+    background-image: url("Grafika/sylwester.jpg");
+    background-size: cover;
+    position: absolute;
+    top: 30px;
+    right: 400px;
+    opacity: 1;
+    display: block;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+#sylwester:hover #syl {
+    opacity: 1;
+}
+
+#sylwester:hover #sylwester {
+    opacity: 0.3;
+}
+
+#syl {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 150px;
+    left: 150px;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: #DCDCDC;
+    color: black;
+    font-size: 25px;
+    padding: 5px;
+}
+
+#christmas {
+    border-radius: 50%;
+    height: 250px;
+    width: 250px;
+    margin: 10px;
+    background-image: url("Grafika/christmas.jpg");
+    background-size: cover;
+    position: absolute;
+    top: 30px;
+    right: 70px;
+    opacity: 1;
+    display: block;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+#christmas:hover #christmas {
+    opacity: 1;
+}
+
+#christmas:hover #chr {
+    opacity: 0.3;
+}
+
+#chr {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 150px;
+    left: 150px;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: #DCDCDC;
+    color: black;
+    font-size: 25px;
+    padding: 5px;
+}
+
+#konstytucja {
+    border-radius: 50%;
+    height: 250px;
+    width: 250px;
+    margin: 10px;
+    background-image: url("Grafika/flaga.jpg");
+    background-size: cover;
+    position: absolute;
+    bottom: 90px;
+    right: 70px;
+    opacity: 1;
+    display: block;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+#kontstytucja:hover #konstytucja {
+    opacity: 1;
+}
+
+#konstytucja:hover #kon {
+    opacity: 0.3;
+}
+
+#kon {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 150px;
+    left: 150px;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: #DCDCDC;
+    color: black;
+    font-size: 25px;
+    padding: 5px;
+}
+
+#grandparents {
+    border-radius: 50%;
+    height: 250px;
+    width: 250px;
+    margin: 10px;
+    background-image: url("Grafika/grandparents.jpg");
+    background-size: cover;
+    position: absolute;
+    bottom: 90px;
+    right: 400px;
+    opacity: 1;
+    display: block;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+#grandparents:hover #grandparents {
+    opacity: 1;
+}
+
+#grandparents:hover #gra {
+    opacity: 0.3;
+}
+
+#gra {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 150px;
+    left: 150px;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: #DCDCDC;
+    color: black;
+    font-size: 25px;
+    padding: 5px;
+}
+
+#opis1, #opis2, #opis3,
+#opis4, #opis5, #opis6,
+#opis7, #opis8 {
+    display: none;
+    height: 40px;
+    background-color: lightgray;
+    width: 215px;
+    padding-top: 5px;
+    padding-left: 10px;
+    text-align: center;
+}
+
+#opis1 {
+    font-size: 20px;
+    position: absolute;
+    top: 263px;
+    left: 10px;
+}
+
+#opis2 {
+    font-size: 20px;
+    position: absolute;
+    top: 263px;
+    left: 20px;
+}
+
+#opis3 {
+    font-size: 20px;
+    position: absolute;
+    top: 260px;
+    left: 10px;
+}
+
+#opis4 {
+    font-size: 20px;
+    position: absolute;
+    top: 260px;
+    left: 20px;
+}
+
+#opis5 {
+    font-size: 20px;
+    position: absolute;
+    top: 263px;
+    right: 10px;
+}
+
+#opis6 {
+    font-size: 20px;
+    position: absolute;
+    top: 263px;
+    right: 20px;
+}
+
+#opis7 {
+    font-size: 20px;
+    position: absolute;
+    top: 260px;
+    right: 10px;
+}
+
+#opis8 {
+    font-size: 20px;
+    position: absolute;
+    top: 260px;
+    right: 20px;
+}
+
+#calendar {
+    margin: 40px;
+    width: 730px;
+}
+
+/* #link {
+    font-size: 20px;
+    width: 730px;
+    height: 80px;
+    background-color: gray;
+    opacity: 0.8;
+    color: black;
+    margin-left: 40px;
+    padding: 5px;
+} */
+
+#NewYork {
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    margin-left: 20px;
+    margin-top: 30px;
+    background-image: url("Grafika/NewYork.jpg");
+    background-size: cover;
+    opacity: 1;
+    display: block;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+#NewYork:hover #NY {
+    opacity: 1;
+}
+
+#NewYork:hover #NewYork {
+    opacity: 0.3;
+}
+
+#NY {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 150px;
+    left: 150px;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: #DCDCDC;
+    color: black;
+    font-size: 25px;
+    padding: 5px;
+}
+
+#London {
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    top: 30px;
+    left: 320px;
+    background-image: url("Grafika/London.jpg");
+    background-size: cover;
+}
+
+#London:hover #Lon {
+    opacity: 1;
+}
+
+#London:hover #London {
+    opacity: 0.3;
+}
+
+#Lon {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 130px;
+    left: 170px;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: #DCDCDC;
+    color: black;
+    font-size: 25px;
+    padding: 5px;
+}
+
+
+#Warsaw {
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    top: 30px;
+    left: 620px;
+    background-image: url("Grafika/Warsaw.jpg");
+    background-size: cover;
+    display: flex;
+}
+
+#Warsaw:hover #War {
+    opacity: 1;
+}
+
+#Warsaw:hover #Warsaw {
+    opacity: 0.3;
+}
+
+#War {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 130px;
+    left: 80px;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: #DCDCDC;
+    color: black;
+    font-size: 25px;
+    padding: 5px;
+}
+
+#NewDelhi {
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    top: 400px;
+    left: 20px;
+    background-image: url("Grafika/NewDelhi.jpg");
+    background-size: cover;
+}
+
+#NewDelhi:hover #ND {
+    opacity: 1;
+}
+
+#NewDelhi:hover #NewDelhi {
+    opacity: 0.3;
+}
+
+#ND {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 150px;
+    left: 150px;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: #DCDCDC;
+    color: black;
+    font-size: 25px;
+    padding: 5px;
+}
+
+#Tokio {
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    top: 400px;
+    left: 320px;
+    background-image: url("Grafika/Tokio.jpg");
+    background-size: cover;
+}
+
+#Tokio:hover #Tok {
+    opacity: 1;
+}
+
+#Tokio:hover #Tokio {
+    opacity: 0.3;
+}
+
+#Tok {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 130px;
+    left: 80px;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: #DCDCDC;
+    color: black;
+    font-size: 25px;
+    padding: 5px;
+}
+
+#Sydney {
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    top: 400px;
+    left: 620px;
+    background-image: url("Grafika/Sydney.jpg");
+    background-size: cover;
+}
+
+#Sydney:hover #Syd {
+    opacity: 1;
+}
+
+#Sdney:hover #Syd {
+    opacity: 0.3;
+}
+
+#Syd {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 130px;
+    left: 80px;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: #DCDCDC;
+    color: black;
+    font-size: 25px;
+    padding: 5px;
+}
+
+.clockN {
+	width: 200px;
+	height: 50px;
+	background-color: 	#DCDCDC;
+    opacity: 0.8;
+	margin-left: 10px;
+	margin-top: 10px;
+	padding: 10px;
+	font-size: 30px;
+	font-weight: bold;
+	text-align: center;
+    position: absolute;
+    top: 300px;
+    left: 30px;
+}
+
+.clockL {
+	width: 200px;
+	height: 50px;
+	background-color: 	#DCDCDC;
+    opacity: 0.8;
+	margin-left: 10px;
+	margin-top: 10px;
+	padding: 10px;
+	font-size: 30px;
+	font-weight: bold;
+	text-align: center;
+    position: absolute;
+    top: 300px;
+    left: 320px;
+}
+
+.clockW {
+	width: 200px;
+	height: 50px;
+	background-color: 	#DCDCDC;
+    opacity: 0.8;
+	margin-left: 10px;
+	margin-top: 10px;
+	padding: 10px;
+	font-size: 30px;
+	font-weight: bold;
+	text-align: center;
+    position: absolute;
+    top: 300px;
+    left: 620px;
+}
+
+.clockND {
+	width: 200px;
+	height: 50px;
+	background-color: 	#DCDCDC;
+    opacity: 0.8;
+	margin-left: 10px;
+	margin-top: 10px;
+	padding: 10px;
+	font-size: 30px;
+	font-weight: bold;
+	text-align: center;
+    position: absolute;
+    top: 660px;
+    left: 30px;
+}
+
+.clockT {
+	width: 200px;
+	height: 50px;
+	background-color: 	#DCDCDC;
+    opacity: 0.8;
+	margin-left: 10px;
+	margin-top: 10px;
+	padding: 10px;
+	font-size: 30px;
+	font-weight: bold;
+	text-align: center;
+    position: absolute;
+    top: 660px;
+    left: 320px;
+}
+
+.clockS {
+	width: 200px;
+	height: 50px;
+	background-color: 	#DCDCDC;
+    opacity: 0.8;
+	margin-left: 10px;
+	margin-top: 10px;
+	padding: 10px;
+	font-size: 30px;
+	font-weight: bold;
+	text-align: center;
+    position: absolute;
+    top: 660px;
+    left: 620px;
+}
+
+#info {
+    height: 30px;
+    width: 500px;
+    background-color: lightgrey;
+    font-size: 20px;
+    margin-top: 40px;
+    margin-right: 60px;
+    float: right;
+    padding: 10px;
+}

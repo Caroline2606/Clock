@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="wydarzenia.js"></script>
+    <title>Zegar</title>
+    <script>
+        $(document).ready(function() {
+            $("#ferie").click(function() {
+                $("#opis1").slideToggle("slow");
+            });
+            $("#wielkanoc").click(function() {
+                $("#opis2").slideToggle("slow");
+            });
+            $("#wakacje").click(function() {
+                $("#opis3").slideToggle("slow");
+            });
+            $("#szkola").click(function() {
+                $("#opis4").slideToggle("slow");
+            });
+            $("#sylwester").click(function() {
+                $("#opis5").slideToggle("slow");
+            });
+            $("#christmas").click(function() {
+                $("#opis6").slideToggle("slow");
+            });
+            $("#konstytucja").click(function() {
+                $("#opis7").slideToggle("slow");
+            });
+            $("#grandparents").click(function() {
+                $("#opis8").slideToggle("slow");
+            });
+        });
+    </script>
+</head>
+<body>
+    <!-- <section id="info">  <- Click on the pictures to see how many days left</section> -->
+    <section id="ferie">
+        <div id="opis1"></div>
+        <div id="fer">Winter Holidays</div>
+        <script>
+            let doDaty = new Date("Jan 17, 2022 00:00:00").getTime();
+
+            let x = setInterval(function() {
+                let today = new Date().getTime();
+                let time = doDaty - today;
+
+                let days = Math.floor(time / (1000 * 60 * 60 * 24));
+                let hours = Math.floor((time % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                let minutes = Math.floor((time % (1000 * 60 * 60)) / (1000 * 60));
+                let secondes = Math.floor((time % (1000 * 60)) / 1000);
+
+                document.getElementById("opis1").innerHTML = days + "d" + "&nbsp" + hours + "h" + "&nbsp" + minutes + "m" + "&nbsp" + secondes + "s";
+
+                if (time < 0) {
+                    clearInterval(x);
+                    document.getElementById("opis1").innerHTML = "EXPIRED";
+                }
+            }, 1000);
+        </script>
+    </section>
+    <section id="wielkanoc">
+        <div id="opis2"></div>
+        <div id="wiel">Easter 2022</div>
+        <script>
+            let doDaty2 = new Date("Apr 17, 2022 00:00:00").getTime();
+
+            let x2 = setInterval(function() {
+                let today2 = new Date().getTime();
+                let time2 = doDaty2 - today2;
+
+                let days2 = Math.floor(time2 / (1000 * 60 * 60 * 24));
+                let hours2 = Math.floor((time2 % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                let minutes2 = Math.floor((time2 % (1000 * 60 * 60)) / (1000 * 60));
+                let secondes2 = Math.floor((time2 % (1000 * 60)) / 1000);
+
+                document.getElementById("opis2").innerHTML = days2 + "d" + "&nbsp" + hours2 + "h" + "&nbsp" + minutes2 + "m" + "&nbsp" + secondes2 + "s";
+
+                if (time2 < 0) {
+                    clearInterval(x2);
+                    document.getElementById("opis2").innerHTML = "EXPIRED";
+                }
+            }, 1000);
+        </script>
+    </section>
+    <section id="wakacje">
+        <div id="opis3"></div>
+        <div id="wak">Holidays 2022</div>
+        <script>
+            let doDaty3 = new Date("Jun 25, 2022 00:00:00").getTime();
+
+            let x3 = setInterval(function() {
+                let today3 = new Date().getTime();
+                let time3 = doDaty3 - today3;
+
+                let days3 = Math.floor(time3 / (1000 * 60 * 60 * 24));
+                let hours3 = Math.floor((time3 % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                let minutes3 = Math.floor((time3 % (1000 * 60 * 60)) / (1000 * 60));
+                let secondes3 = Math.floor((time3 % (1000 * 60)) / 1000);
+
+                document.getElementById("opis3").innerHTML = days3 + "d" + "&nbsp" + hours3 + "h" + "&nbsp" + minutes3 + "m" + "&nbsp" + secondes3 + "s";
+
+                if (time3 < 0) {
+                    clearInterval(x3);
+                    document.getElementById("opis3").innerHTML = "EXPIRED";
+                }
+            }, 1000);
+        </script>
+    </section>
+    <section id="szkola">
+        <div id="opis4"></div>
+        <div id="szk">School 2022</div>
+        <script>
+            let doDaty4 = new Date("Sep 1, 2022 00:00:00").getTime();
+
+            let x4 = setInterval(function() {
+                let today4 = new Date().getTime();
+                let time4 = doDaty4 - today4;
+
+                let days4 = Math.floor(time4 / (1000 * 60 * 60 * 24));
+                let hours4 = Math.floor((time4 % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                let minutes4 = Math.floor((time4 % (1000 * 60 * 60)) / (1000 * 60));
+                let secondes4 = Math.floor((time4 % (1000 * 60)) / 1000);
+
+                document.getElementById("opis4").innerHTML = days4 + "d" + "&nbsp" + hours4 + "h" + "&nbsp" + minutes4 + "m" + "&nbsp" + secondes4 + "s";
+
+                if (time4 < 0) {
+                    clearInterval(x4);
+                    document.getElementById("opis4").innerHTML = "EXPIRED";
+                }
+            }, 1000);
+        </script>
+    </section>
+    <section id="sylwester">
+        <div id="opis5"></div>
+        <div id="syl">New Year's Eve 2021</div>
+        <script>
+            let doDaty5 = new Date("Dec 31, 2021 00:00:00").getTime();
+
+            let x5 = setInterval(function() {
+                let today5 = new Date().getTime();
+                let time5 = today5 - doDaty5;
+
+                let days5 = Math.floor(time5 / (1000 * 60 * 60 * 24));
+                let hours5 = Math.floor((time5 % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                let minutes5 = Math.floor((time5 % (1000 * 60 * 60)) / (1000 * 60));
+                let secondes5 = Math.floor((time5 % (1000 * 60)) / 1000);
+
+                document.getElementById("opis5").innerHTML = days5 + "d" + "&nbsp" + hours5 + "h" + "&nbsp" + minutes5 + "m" + "&nbsp" + secondes5 + "s";
+
+                // if (time5 < 0) {
+                //     clearInterval(x);
+                //     document.getElementById("opis5").innerHTML = "EXPIRED";
+                // }
+            }, 1000);
+        </script>
+    </section>
+    <section id="christmas">
+        <div id="opis6"></div>
+        <div id="chr">Christmas Eve 2021</div>
+        <script>
+            let doDaty6 = new Date("Dec 24, 2021 00:00:00").getTime();
+
+            let x6 = setInterval(function() {
+                let today6 = new Date().getTime();
+                let time6 = today6 - doDaty6;
+
+                let days6 = Math.floor(time6 / (1000 * 60 * 60 * 24));
+                let hours6 = Math.floor((time6 % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                let minutes6 = Math.floor((time6 % (1000 * 60 * 60)) / (1000 * 60));
+                let secondes6 = Math.floor((time6 % (1000 * 60)) / 1000);
+
+                document.getElementById("opis6").innerHTML = days6 + "d" + "&nbsp" + hours6 + "h" + "&nbsp" + minutes6 + "m" + "&nbsp" + secondes6 + "s";
+
+                // if (time < 0) {
+                //     clearInterval(x);
+                //     document.getElementById("opis1").innerHTML = "EXPIRED";
+                // }
+            }, 1000);
+        </script>
+    </section>
+    <section id="konstytucja">
+        <div id="opis7"></div>
+        <div id="kon">Święto Konstytucji 3 Maja 2021</div>
+        <script>
+            let doDaty7 = new Date("May 3, 2021 00:00:00").getTime();
+
+            let x7 = setInterval(function() {
+                let today7 = new Date().getTime();
+                let time7 = today7 - doDaty7;
+
+                let days7 = Math.floor(time7 / (1000 * 60 * 60 * 24));
+                let hours7 = Math.floor((time7 % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                let minutes7 = Math.floor((time7 % (1000 * 60 * 60)) / (1000 * 60));
+                let secondes7 = Math.floor((time7 % (1000 * 60)) / 1000);
+
+                document.getElementById("opis7").innerHTML = days7 + "d" + "&nbsp" + hours7 + "h" + "&nbsp" + minutes7 + "m" + "&nbsp" + secondes7 + "s";
+
+                // if (time < 0) {
+                //     clearInterval(x);
+                //     document.getElementById("opis1").innerHTML = "EXPIRED";
+                // }
+            }, 1000);
+        </script>
+    </section>
+    <section id="grandparents">
+        <div id="opis8"></div>
+        <div id="gra">Grandparents Day 2021</div>
+        <script>
+            let doDaty8 = new Date("Dec 31, 2021 00:00:00").getTime();
+
+            let x8 = setInterval(function() {
+                let today8 = new Date().getTime();
+                let time8 = today8 - doDaty8;
+
+                let days8 = Math.floor(time8 / (1000 * 60 * 60 * 24));
+                let hours8 = Math.floor((time8 % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                let minutes8 = Math.floor((time8 % (1000 * 60 * 60)) / (1000 * 60));
+                let secondes8 = Math.floor((time8 % (1000 * 60)) / 1000);
+
+                document.getElementById("opis8").innerHTML = days8 + "d" + "&nbsp" + hours8 + "h" + "&nbsp" + minutes8 + "m" + "&nbsp" + secondes8 + "s";
+
+                // if (time < 0) {
+                //     clearInterval(x);
+                //     document.getElementById("opis1").innerHTML = "EXPIRED";
+                // }
+            }, 1000);
+        </script>
+    </section>
+</body>
+</html>
